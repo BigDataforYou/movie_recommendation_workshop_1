@@ -78,9 +78,9 @@ class Recommendation:
 
 
                 #ottengo l'anno dal titolo sfruttando una regex ed estrapolo le prime tre cifre tramite slicing così da ottenere il decennio in tre cifre es. 199 per gli anni novanta
-                period = re.search('([0-9][0-9][0-9][0-9])', self.movies_df.loc[ initialize_index[ idx ] ]['movie_title'] ).group(0)[:3]
+                self.period = re.search('([0-9][0-9][0-9][0-9])', self.movies_df.loc[ initialize_index[ idx ] ]['movie_title'] ).group(0)[:3]
                 #utilizzo il decennio come chiave di stringa per il dizionario ordinato dei decenni e incremento il valore. 
-                self.user_period[ period ] = self.user_period[ period ] + 1
+                self.user_period[ self.period ] = self.user_period[ self.period ] + 1
 
 
     #metodo per aggiornare le preferenze di ogni utente via via che fa una scelta. Gli si passa l'id del film e il flag per capire se gli è piaciuto o no. Il flag viene dal si o dal no nel popup javascript
@@ -101,9 +101,9 @@ class Recommendation:
         #period = re.search('([0-9][0-9][0-9][0-9])', self.movies_df.loc[ next_movie ][ 'movie_title' ]).group(0)[:3]
         if like == 1:
             #qui controllo che l'intervallo sia sempre da 0 a 5
-            self.user_period[ period ] = self.user_period[ period ] + (0 if self.user_period[ period ] >= 5 else 1)
+            self.user_period[ self.period ] = self.user_period[ self.period ] + (0 if self.user_period[ self.period ] >= 5 else 1)
         if like == 0:
-            self.user_period[ period ] = self.user_period[ period ] - (0 if self.user_period[ period ] <= 0 else 1)
+            self.user_period[ self.period ] = self.user_period[ self.period ] - (0 if self.user_period[ self.period ] <= 0 else 1)
         
 
     #prodotto vettoriale fatto a mano. Prendo il punteggio del genere dai vettori passati dalle funzioni chiamanti e il vettore dei periodi dalle variabili globali
