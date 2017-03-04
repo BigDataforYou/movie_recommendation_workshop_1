@@ -1,7 +1,7 @@
 # Movie Recommendation System
 
 The following system has been created for the event "[Recommendation System - Talks&Workshop](https://www.facebook.com/events/1833870853536142/)" organized by Big Data for You and held in Catania on Feb 25th, 2017.
-The workshop aimed at building a minimal web application in python, that could be used to recommend a movie based on the user preferences.
+The workshop aimed at building a minimal web application in Python 2, that could be used to recommend a movie based on the user preferences.
 
 ## Getting Started
 
@@ -73,10 +73,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Eugenio Galioto** - *Initial work* - [EugenioGalioto](https://github.com/eugeniogalioto)
-* **Antonio Castiglione** - *Choice of algorithm* - [AntonioCastiglione](https://github.com/antoniocastiglione)
-* **Luca Naso** - *Choice of algorithm and Meta data* - [LucaNaso](https://github.com/lucanaso)
-* **Salvo Tucci** - *UX* - [SalvoTucci](https://github.com/tuccisalvo)
+* **[Eugenio Galioto](https://github.com/eugeniogalioto)** - *Initial work*
+* **[Antonio Castiglione](https://github.com/antoniocastiglione)** - *Choice of algorithm*
+* **[Luca Naso](https://github.com/lucanaso)** - *Choice of algorithm and Meta data*
+* **[Salvo Tucci](https://github.com/tuccisalvo)** - *UX*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -92,4 +92,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Attribution
 
-This README is adapted from the [PurpleBooth][https://gist.github.com/PurpleBooth] available at [https://gist.github.com/PurpleBooth/109311bb0361f32d87a2]
+This README is adapted from [PurpleBooth](https://gist.github.com/PurpleBooth), available at [README-Template.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
