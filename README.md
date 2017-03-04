@@ -69,7 +69,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/BigDataforYou/movie_recommendation_workshop_1/tags). 
 
 ## Authors
 
@@ -78,7 +78,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **[Luca Naso](https://github.com/lucanaso)** - *Initial choice of algorithm*
 * **[Salvo Tucci](https://github.com/tuccisalvo)** - *Initial UX*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/BigDataforYou/movie_recommendation_workshop_1/graphs/contributors) who participated in this project.
 
 ## License
 
