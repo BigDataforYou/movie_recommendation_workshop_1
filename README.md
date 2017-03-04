@@ -74,9 +74,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 * **[Eugenio Galioto](https://github.com/eugeniogalioto)** - *Initial work*
-* **[Antonio Castiglione](https://github.com/antoniocastiglione)** - *Choice of algorithm*
-* **[Luca Naso](https://github.com/lucanaso)** - *Choice of algorithm and Meta data*
-* **[Salvo Tucci](https://github.com/tuccisalvo)** - *UX*
+* **[Antonio Castiglione](https://github.com/antoniocastiglione)** - *Initial choice of algorithm*
+* **[Luca Naso](https://github.com/lucanaso)** - *Initial choice of algorithm*
+* **[Salvo Tucci](https://github.com/tuccisalvo)** - *Initial UX*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
