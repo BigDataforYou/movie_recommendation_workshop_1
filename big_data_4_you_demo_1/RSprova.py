@@ -12,10 +12,11 @@ import numpy
 
 
 class Recommendation:
-    # initialize_flags è la stringa di bit per il check dei 12 film.
-    # initialize_index rappresenta una lista di 12 numeri che indicano gli indici dei 12 film
-    #   per l'assestamento iniziale dei gusti
     def __init__(self, initialize_flags, initialize_index):
+        # initialize_flags è la stringa di bit per il check dei 12 film.
+        # initialize_index rappresenta una lista di 12 numeri che indicano gli indici dei 12 film
+        #   per l'assestamento iniziale dei gusti
+
         self.movies_df = pd.read_csv('movies.csv',
                                      names=['movie_id', 'movie_title', 'movie_genre'], encoding='latin-1')
         # Convertamo tutti i generi dei film in un set di variabili fittizie
@@ -88,10 +89,11 @@ class Recommendation:
                 # e incremento il valore.
                 self.user_period[self.period] = self.user_period[self.period] + 1
 
-    # metodo per aggiornare le preferenze di ogni utente via via che fa una scelta.
-    #   Gli si passa l'id del film e il flag per capire se gli è piaciuto o no.
-    #   Il flag viene dal si o dal no nel popup javascript
     def refresh_preferences(self, next_movie, like):
+        # metodo per aggiornare le preferenze di ogni utente via via che fa una scelta.
+        #   Gli si passa l'id del film e il flag per capire se gli è piaciuto o no.
+        #   Il flag viene dal si o dal no nel popup javascript
+
         # VEDERE SU
         n_genres = len(self.movies_df.loc[int(next_movie)][2].split('|'))
         # cicla per ogni genere del film e controlla se il like dal javascript è 1 o 0.
@@ -129,8 +131,8 @@ class Recommendation:
         #   di un parametro rispetto ad un altro. Periodo rispetto a genere
         return numpy.mean([genre_score, period_score])
 
-    # semplice metodo di passaggio
     def get_movie_score(self, movie_features, user_preferences):
+        # semplice metodo di passaggio
         return self.dot_product(movie_features, user_preferences)
     # questo metodo crea la colonna score nella struttura movies_df
     #   e gli applica il valore calcolato da get_movie_score
@@ -161,8 +163,8 @@ class Recommendation:
                         'genre_settings': self.user_preferences, 'decade_settings': self.user_period}
                 # return self.movies_df.sort_values(by=['score'], ascending=False)['movie_title'][idx:idx+1]
 
-    # funzione che indica il prossimo film da cui estrarre il film consigliato
     def next_movie(self, movie_index, like):
+        # funzione che indica il prossimo film da cui estrarre il film consigliato
         # l'indice del film sarà -1 solo nell inizializzazione delle preferenze per skippare
         #   la funzione di refresh_preferences. In tutti gli altri casi la funzione funzionerà
         if movie_index > -1:
