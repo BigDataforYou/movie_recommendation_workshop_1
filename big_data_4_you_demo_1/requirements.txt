@@ -53,7 +53,7 @@ psutil==4.3.1
 ptyprocess==0.5.1
 pyasn1==0.1.9
 pycrypto==2.6.1
-Pygments==2.2.0
+Pygments==2.7.4
 # pygobject==3.20.0
 # pyliblzma==0.5.3  # not working
 # pyneighborhood==0.5.1
