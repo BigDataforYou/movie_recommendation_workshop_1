@@ -81,7 +81,7 @@ SquareMap==1.0.4
 stevedore==1.16.0
 traitlets==4.3.2
 tzlocal==1.2
-ujson==1.33
+ujson==5.4.0
 # unity-lens-photos==1.0
 urllib3==1.13.1
 # vboxapi==1.0
